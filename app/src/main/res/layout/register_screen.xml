@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.itimobiletrack.graduation_nano_program_iti.RegisterScreen">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:id="@+id/xUsernameEditTextRegister"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <requestFocus></requestFocus>
+
+    <EditText
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_below="@+id/xUsernameEditTextRegister"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/xPasswordEditTextRegister"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <requestFocus></requestFocus>
+
+    <EditText
+        android:hint="Confirm Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/xConfirmPasswordEditTextRegister"
+        android:layout_below="@+id/xPasswordEditTextRegister"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <requestFocus></requestFocus>
+
+    <EditText
+
+        android:hint="Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/xPhoneEditTextRegister"
+        android:layout_below="@+id/xConfirmPasswordEditTextRegister"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <requestFocus></requestFocus>
+
+    <AutoCompleteTextView
+        android:hint="Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xAddressAutoCompleteTextView"
+        android:layout_below="@+id/xPhoneEditTextRegister"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/xRestaurantAutoCompleteTextView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp" >
+
+        <RadioButton
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Community"
+            android:id="@+id/xRestaurantRadioButton"
+            />
+        <RadioButton
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurant"
+            android:id="@+id/xCommunityRadioButton"
+            />
+    </RadioGroup>
+
+    <AutoCompleteTextView
+        android:hint="Community name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xCommunityNameAutoCompleteTextView2"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/xAddressAutoCompleteTextView"
+        android:layout_toRightOf="@+id/requestFocus2"
+        android:layout_toEndOf="@+id/requestFocus2" />
+
+    <AutoCompleteTextView
+        android:hint="Restaurant name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xRestaurantAutoCompleteTextView3"
+        android:layout_below="@+id/xCommunityNameAutoCompleteTextView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+    <Button
+        android:layout_marginLeft="92dp"
+        android:text="SingUp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/xRegisterButtonRegister" />
+
+
+</LinearLayout>
+</ScrollView>
